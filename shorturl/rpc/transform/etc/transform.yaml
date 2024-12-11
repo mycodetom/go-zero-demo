@@ -1,0 +1,10 @@
+Name: transform.rpc
+ListenOn: 0.0.0.0:8080
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: transform.rpc
+DataSource: root:123456@tcp(169.254.17.28:3306)/go-zero # 用户名和密码为你本地 mysql-server 密码，并非完全一致
+Table: shorturl
+Cache:
+  - Host: localhost:6379
